@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="EUC-KR">
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+<title>Gukbab Worm</title>
+<link rel="shortcut icon" href="./img/worm01.png">
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+<!-- 부가적인 테마 -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+<!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css">
+
+<link rel="stylesheet" href="./css/style.css">
+<script type="text/javascript">
+</script>
+</head>
+<body>
+<div class="main">
+<div class="container">
+<div class=".col-xs-6">
+	<header>
+		<h1>국밥계산기</h1>
+		<h3>Gukbab Worm</h3>
+	</header>
+	<div class="swiper-container">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide">
+				<div>
+					<img alt="국밥벌레" src="./img/worm01.png"></br>
+					<input type="button" class="btn btn-primary btn-lg" value="계산하기" />
+				</div>
+			</div>
+			<div class="swiper-slide">
+				<div>
+					<form id="wasteInfo" class="swiper-container">
+						<input type="text" id="waste" placeholder="사치품명을 입력하세요."/>
+						<input type="text" id="price" placeholder="사치품의 가격을 입력하세요."/>
+						<input type="button" id="minus" value="-"/>
+						</br>
+						<input type="button" id="plus" value="+"/></br>
+						<input type="submit" id="cal" value="계산"/>
+					</form>	
+				</div>
+			</div>
+			<div class="swiper-slide">
+				<div class="result" class="swiper-container">
+					<div class="wasteList">
+						
+					</div>
+					<hr>
+					<div id="result">
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<h5>Made by <a href="https://github.com/saebak">saebak</a></h5>
+	</footer>
+</div>
+</div>
+</div>
+</body>
+</html>
