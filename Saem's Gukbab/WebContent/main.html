@@ -12,9 +12,18 @@
 <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
 
 <link rel="stylesheet" href="./css/style.css">
 <script type="text/javascript">
+
+new Swiper('.swiper-container', {
+	navigation : {
+		nextEl : '.swiper-button-next', // 다음 버튼 클래스명
+		prevEl : '.swiper-button-prev', // 이번 버튼 클래스명
+	},
+});
+
 </script>
 </head>
 <body>
@@ -30,12 +39,12 @@
 			<div class="swiper-slide">
 				<div>
 					<img alt="국밥벌레" src="./img/worm01.png"></br>
-					<input type="button" class="btn btn-primary btn-lg" value="계산하기" />
+					<input type="button" class="btn btn-primary btn-lg" id="start" value="계산하기" />
 				</div>
 			</div>
 			<div class="swiper-slide">
 				<div>
-					<form id="wasteInfo" class="swiper-container">
+					<form id="wasteInfo" >
 						<input type="text" id="waste" placeholder="사치품명을 입력하세요."/>
 						<input type="text" id="price" placeholder="사치품의 가격을 입력하세요."/>
 						<input type="button" id="minus" value="-"/>
@@ -46,7 +55,7 @@
 				</div>
 			</div>
 			<div class="swiper-slide">
-				<div class="result" class="swiper-container">
+				<div class="result">
 					<div class="wasteList">
 						
 					</div>
@@ -57,6 +66,8 @@
 				</div>
 			</div>
 		</div>
+<!-- 		<div class="swiper-button-prev" id="prevEl"></div> -->
+<!-- 		<div class="swiper-button-next" id="nextEl"></div> -->
 	</div>
 	<footer>
 		<h5>Made by <a href="https://github.com/saebak">saebak</a></h5>
